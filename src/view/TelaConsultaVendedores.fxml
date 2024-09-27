@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.TelaConsultaVendedoresController">
+   <children>
+      <HBox prefHeight="116.0" prefWidth="600.0" spacing="10.0">
+         <children>
+            <Button fx:id="btnNovo" mnemonicParsing="false" prefHeight="30.0" prefWidth="80.0" text="Novo">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="btnExcluir" mnemonicParsing="false" prefHeight="30.0" prefWidth="80.0" text="Excluir" />
+            <Button fx:id="btnDptos" mnemonicParsing="false" prefHeight="30.0" prefWidth="100.0" text="Departamentos" />
+         </children>
+         <padding>
+            <Insets left="20.0" top="20.0" />
+         </padding>
+      </HBox>
+      <TableView fx:id="tableViewVend" layoutX="14.0" layoutY="81.0" prefHeight="309.0" prefWidth="572.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="81.0">
+        <columns>
+          <TableColumn fx:id="tableColumnCod" prefWidth="75.0" text="Código" />
+          <TableColumn fx:id="tableColumnNome" prefWidth="75.0" text="Nome" />
+            <TableColumn fx:id="tableColumnData" prefWidth="99.0" text="Data Nasc." />
+            <TableColumn fx:id="tableColumnSalario" prefWidth="75.0" text="Salário" />
+            <TableColumn fx:id="tableColumnDpto" prefWidth="94.0" text="Departamento" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
